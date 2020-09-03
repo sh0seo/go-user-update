@@ -8,10 +8,10 @@
 - main.go에 name, cardNumber에 변경해야하는 사용자와 변경하려는 카드 번호를 입력
 
 ```
-	// input
-	name := "rfid_tester"
-	// input
-	cardNumber := "123456789"
+// input
+name := "rfid_tester"
+// input
+cardNumber := "123456789"
 ```
 
 - 변경한 코드를 master에 push 하면 자동으로 갱신이 됨
