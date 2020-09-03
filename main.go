@@ -16,7 +16,7 @@ func main() {
 	// input
 	name := "rfid_tester"
 	// input
-	cardNumber := "1234567890"
+	cardNumber := "123456789"
 
 	dbHost := os.Getenv("DB_HOST")
 	dbPassword := os.Getenv("DB_PW")
