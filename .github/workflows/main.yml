@@ -1,0 +1,25 @@
+name: update
+
+on:
+  push:
+    branches: [ master ]
+      
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2.3.2
+      with:
+        ref: "master"
+    
+    - name: go setup
+      uses: actions/setup-go@v2.1.2
+      with:
+        go-version: "1.13"
+    
+    - name: run 
+      run: |
+        go run main.go
+      env:
+        DB_HOST: ${{ secrets.DB_HOST}}
+        DB_PW: ${{ secrets.DB_PW}}
