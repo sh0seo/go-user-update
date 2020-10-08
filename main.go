@@ -14,9 +14,9 @@ func main() {
 	fmt.Println("DCCafe User RFID Update")
 
 	// input
-	name := "박수빈"
+	name := "이종승(다산)"
 	// input
-	cardNumber := "3255919878"
+	cardNumber := "3255332646"
 
 	dbHost := os.Getenv("DB_HOST")
 	dbPassword := os.Getenv("DB_PW")
