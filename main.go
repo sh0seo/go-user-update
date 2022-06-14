@@ -16,7 +16,7 @@ func main() {
 	// input
 	email := "jebaek@digicaps.com"
 	// input
-	cardNumber := "ffc355d7c2cdee91f407da1616f7916cb071e9f663eb5436cad7b03b54e84254d"
+	cardNumber := "fc355d7c2cdee91f407da1616f7916cb071e9f663eb5436cad7b03b54e84254d"
 
 	dbHost := os.Getenv("DB_HOST")
 	dbPassword := os.Getenv("DB_PW")
