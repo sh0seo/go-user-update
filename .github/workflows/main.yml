@@ -25,5 +25,6 @@ jobs:
       run: |
         go run main.go
       env:
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
         DB_HOST: ${{ secrets.DB_HOST}}
         DB_PW: ${{ secrets.DB_PW}}
