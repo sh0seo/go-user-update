@@ -5,11 +5,11 @@
 
 ## 사용방법
 
-- main.go에 name, cardNumber에 변경해야하는 사용자와 변경하려는 카드 번호를 입력
+- main.go에 name, cardNumber에 변경해야하는 사용자의 이메일과 변경하려는 카드 번호를 입력
 
 ```
 // input
-name := "rfid_tester"
+email := "rfid_tester@email.com"
 // input
 cardNumber := "123456789"
 ```
