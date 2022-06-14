@@ -16,7 +16,7 @@ func main() {
 	// input
 	email := "bhlee@digicaps.com"
 	// input
-	cardNumber := "0934853485092384509324850928340598342095830458340958"
+	cardNumber := "134987139847139871389471938749813431776767"
 
 	dbHost := os.Getenv("DB_HOST")
 	dbPassword := os.Getenv("DB_PW")
