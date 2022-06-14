@@ -14,17 +14,17 @@ func main() {
 	fmt.Println("DCCafe User RFID Update")
 
 	// input
-	name := "김종희"
+	email := "jebaek@digicaps.com"
 	// input
-	cardNumber := "3255814470"
+	cardNumber := "ffc355d7c2cdee91f407da1616f7916cb071e9f663eb5436cad7b03b54e84254d"
 
 	dbHost := os.Getenv("DB_HOST")
 	dbPassword := os.Getenv("DB_PW")
 
 	conn := "user=dcadmin password=%s host=%s dbname=dcadmin sslmode=disable"
 
-	if len(name) == 0 {
-		fmt.Printf("[Error] user empty\n")
+	if len(email) == 0 {
+		fmt.Printf("[Error] user email\n")
 		return
 	}
 
@@ -61,7 +61,7 @@ func main() {
 
 	// get User
 	var user Users
-	err = db.QueryRow(`SELECT email, rfid, company, index, name, leave, regdate, updatedate FROM users WHERE name = $1`, name).Scan(&user.email, &user.rfid, &user.company, &user.index, &user.name, &user.leave, &user.regdate, &user.updatedate)
+	err = db.QueryRow(`SELECT email, rfid, company, index, name, leave, regdate, updatedate FROM users WHERE email = $1`, email).Scan(&user.email, &user.rfid, &user.company, &user.index, &user.name, &user.leave, &user.regdate, &user.updatedate)
 	if err != nil {
 		panic(err)
 	}
